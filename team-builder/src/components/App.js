@@ -20,7 +20,7 @@ const intialTeamMembers=[
         name:'Alexander',
         email:'Hamilton@musical.com',
         role:'Writer',
-      }
+      },
 ]
 
 
