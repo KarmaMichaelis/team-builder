@@ -20,13 +20,19 @@ const intialTeamMembers=[
         name:'Alexander',
         email:'Hamilton@musical.com',
         role:'Writer',
-      },
+      }
 ]
 
+const intialFormValues={
+  username:'',
+  email:'',
+  role:'',
+}
 
 
 export default function App(){
-    const [teamMembers,setTeamMembers]=useState('')
+    const [teamMembers,setTeamMembers]=useState(intialTeamMembers)
+    const [formValues,setFormValues]=(intialFormValues)
     return(
       <div>
         <Form/>
