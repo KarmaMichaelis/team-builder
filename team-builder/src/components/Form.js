@@ -8,8 +8,12 @@ export default function Form(props){
     }=props
 
     return(
-        <form>
-            
+        <form >
+
+
+            <label>Username:&nbsp;</label>
+            <label>Email:&nbsp;</label>
+            <label>Role:&nbsp;</label>
         </form>
     )
 }

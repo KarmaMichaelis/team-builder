@@ -35,7 +35,11 @@ export default function App(){
     const [formValues,setFormValues]=(intialFormValues)
     return(
       <div>
-        <Form/>
+        <Form
+         values={formValues}
+         onInputChange={onInputChange}
+         onSubmit={onSubmit}
+         />
       </div>
     )
 }
