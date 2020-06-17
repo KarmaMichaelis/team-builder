@@ -8,12 +8,34 @@ export default function Form(props){
     }=props
 
     return(
-        <form >
+        <form onSubmit={onSubmit}>
 
 
-            <label>Username:&nbsp;</label>
-            <label>Email:&nbsp;</label>
+            <label>Username:&nbsp;
+                <input
+                    type='text'
+                    name='username'
+                    value={values.username}
+                    onChange={onInputChange}
+                    maxLength='100'
+                
+                />
+            </label>
+            <label>Email:&nbsp;
+            <input
+                    type='email'
+                    name='email'
+                    value={values.email}
+                    onChange={onInputChange}
+                    maxLength='100'
+                
+                />
+            </label>
             <label>Role:&nbsp;</label>
+            <div>
+                <h2>Add Team Memeber</h2>
+                <button>Submit</button>
+            </div>
         </form>
     )
 }
