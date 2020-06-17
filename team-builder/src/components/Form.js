@@ -31,7 +31,20 @@ export default function Form(props){
                 
                 />
             </label>
-            <label>Role:&nbsp;</label>
+            <label>Role:&nbsp;
+                <select
+                    name='role'
+                    value={values.role}
+                    onChange={onInputChange}
+                
+                >
+                   
+                    <option value=''>---Select a Role---</option>
+                    <option value='Designer'>Designer</option>
+                    <option value='Writer'>Writer</option>
+                    <option value='RolePlayer'>RolePlayer</option>
+                </select>
+            </label>
             <div>
                 <h2>Add Team Memeber</h2>
                 <button>Submit</button>
